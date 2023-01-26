@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* размеры ширины и высоты включают в себя padding */
+    /* border: 1px solid black; */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+/* Обертка */
+.wrapper {
+    width: 60%;
+    margin: auto;
+}
+/* Дизайн и верстка */
+header {
+    
+    background-color: #EEEFF1;
+}
+.design-wrapper {
+    padding: 80px 0 140px;
+    
+    
+}
+.logo {
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.about-design {
+    font-size: 48px;
+    margin-right: 400px;
+    color: #34547A;
+    font-family: 'Revalia', cursive;
+}
+nav {
+    width: 610px;
+    display: flex;
+    
+}
+a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #34547A;
+    text-decoration: none;
+    text-transform: uppercase;  
+}
+a:not(:last-child) {
+    margin-right: 40px;
+}
+.webdesign {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+img {
+    padding-left: 70px;
+    margin-right: 130px;
+}
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    width: 540px;
+}
+.design {
+    width: 540px;
+}
+.design-descr {
+    margin: 60px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+button {
+    display: block;
+    padding: 25px 40px;
+    background-color: #34547A;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+}
+/* Обо мне */
+.about {
+    width: 30%;
+    margin: 120px 690px 100px;
+}
+.aboutME {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;   
+}
+.about-descr {
+    color: #727272;
+    text-align: center;
+    line-height: 26px;
+}
+/* Мои проекты */
+.myprojects {
+    background-color: #34547A;
+    padding: 100px 0;
+}
+.myprojects-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myproject {
+    display: block;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 140px;
+    height: 50px;
+}
+.myproject:not(:last-child) {
+    margin-right: 50px;
+}
+.myproject-item {
+    display: block;
+    margin-right: 20px;
+}
+.myitem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+.forty {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.forty-projects {
+    font-weight: 400;
+    font-size: 16px;
+   
+}
+/* Мои навыки */
+.skills {
+    padding: 100px 0;
+}
+.skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-info {
+    width: 40%;
+}
+.skills-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px; 
+}
+.skill-scale:not(:last-child) {
+    margin-bottom: 32px;
+}
+.skill-name {
+    color: #727272;
+    margin-bottom: 20px;
+    
+}
+.skill-scale-outer {
+    height: 4px;
+    background-color: #C4C4C4;
+
+}
+.skill-scale-inner {
+    width: 70%;
+    height: 100%;
+    background-color: #34547A;;
+}
+.skills-img {
+    width: 50%;
+    display: block; /* т.к. картинка неблочный элемент */   
+}
+/* Как я работаю */
+.process {
+    padding: 100px 0;
+    background-color: #EEEFF1;
+}
+.process-title {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+.process-descr {
+    width: 50%;
+    margin: 50px auto 60px;
+    color: #727272;
+    text-align: center;
+}
+.process-video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+/* Проекты */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-item {
+    width: 25%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+       
+}
+.sticker {
+    background-image: url(./images/sticker.png);
+}
+.laptop {
+    background-image: url(./images/laptop.png);
+}
+.projects-item-inner {
+    height: 100%; /* на всю высоту внешнего блока*/
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    opacity: 0; /* прозрачность блока. 0 - прозрачный(невидимый), 1 - непрозрачный, 0.5 - прозрачный наполовину*/
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.projects-item-inner:hover {
+    opacity: 1;
+}
+ /*Майкрософт */
+ .micro {
+    padding: 100px 0;
+ }
+ .micro-wrapper {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+ }
+.microsoft {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    
+ }
+.microsoft:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+/*Форма*/
+.form {
+    background-color: #EEEFF1;
+    padding: 100px 0;
+    
+}
+.form-wrapper {
+    width: 30%;
+    margin: auto;
+}
+.form-title {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+.form-descr {
+    color: #727272;
+    margin: 50px 0 65px;
+    text-align: center;
+    line-height: 26px;
+}
+.form-control {
+    display: flex;
+    justify-content: space-between;
+}
+input[name="name"], input[name="email"] {
+    width: 45%;
+    padding: 20px;
+    border: none; /* убираем границы у элемента (input) */
+    outline: none; /* убираем границы, которые появляются при фокусе */
+}
+textarea {
+    width: 100%;
+    border: none; /* убираем границы у элемента */
+    outline: none;
+    padding: 20px; /* отступы внутри окна, чтобы надпись не прилипала к краю*/
+    margin: 20px 0 50px;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 20px 45px;
+    background-color: #34547A;
+    border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase; /* буквы в верхнем регистре */
+}
+/* Footer */
+.owner-social {
+    height: 151px;
+    margin: auto;
+    background-color: #34547A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.owner {
+    margin: 50px 0 50px 400px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.rights {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+}
+.social-icons {
+    margin: 55px 390px 55px 0;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.social-item {
+    display: block;
+    height: 40px;
+    padding: 0;
+    
+}
+.social-item:not(:last-child) {
+    margin-right: 22px;
+}
+
+/* border: 1px solid black; - границы (рамка): толщина стиль цвет;
+
+div, section, p, main, header, footer, aside, h1-h6 - блочные элементы
+*/
+
